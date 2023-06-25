@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap");
+
+* {
+  font-family: "Inter Tight", sans-serif;
+  background-color: yellow;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Titres */
+
+h1 {
+  font-size: 40px;
+  max-width: 185px;
+  margin: 0px auto;
+}
+
+h1:hover {
+  animation: flashy-text 0.75s;
+}
+
+h2:hover {
+  scale: 1.1;
+  text-shadow: 0 0 5px #fff;
+  transition: scale 3s ease-out;
+}
+
+/* Champ de saisie */
+
+div.div-saisir {
+  margin: 0px auto;
+}
+
+input {
+  border: 2.5px solid grey;
+}
+
+/* Liste de tâches */
+ul {
+  font-size: 15px;
+  padding: 10px 10px;
+  margin: 10px 0;
+}
+
+li {
+  margin-left: 0px;
+  list-style: none;
+  list-style-type: none;
+}
+
+div.container {
+  display: inline-block;
+  max-width: 100%;
+  min-width: 200px;
+  padding: 5px 15px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+
+  background-color: #fff;
+  color: black;
+
+  border: 1.85px solid black;
+  border-radius: 2.5px 6px 2.5px 6px;
+  box-shadow: 0 0 10px white;
+}
+
+div.container:hover {
+  background-color: rgb(150, 158, 45);
+  scale: 1.025;
+  border: 2px solid black;
+
+  transition: scale 10s ease;
+  transition: background-color 1.25s ease;
+}
+
+div.panel-btn {
+}
+
+div.panel-btn:hover {
+}
+
+div.footer-count {
+  position: initial;
+  left: 0px;
+  bottom: 0px;
+  margin: 0px auto;
+  font-size: 17px;
+  font-weight: 1000;
+}
+
+.footer-count span:hover {
+  font-size: 20px;
+  transition: font-size 0.5s;
+}
+
+/* Boutons */
+
+.btn {
+  background-color: #fff;
+  border-radius: 3.5px;
+}
+.btn:hover {
+  scale: 1.075;
+  border: 2px groove black;
+  border-radius: 4px;
+  transition: background-color 0.5s ease;
+}
+
+.btn-ajouter {
+  position: relative;
+  border: 1.5px groove black;
+  margin: 2.25px;
+}
+
+.btn-rm {
+  margin: 0 0 0 10px;
+}
+
+.btn-valider {
+  margin: 0 0 0 7px;
+}
+
+.btn-ajouter:hover {
+  background-color: #ffa;
+}
+
+.btn-rm:hover {
+  background-color: red;
+}
+
+.btn-valider:hover {
+  background-color: greenyellow;
+}
+
+/* Classes spécifiques */
+
+/* Animations */
+
+@keyframes shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(7.5deg);
+  }
+  66% {
+    transform: rotate(-7.5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes flashy-text {
+  0% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    color: white;
+    text-shadow: -1px -1px 0 #000, /* Top-left shadow */ 1px -1px 0 #000,
+      /* Top-right shadow */ -1px 1px 0 #000,
+      /* Bottom-left shadow */ 1px 1px 0 #000; /* Bottom-right shadow */
+  }
+}
+
+.shaking:hover {
+  animation: shaking 0.25s;
+}
+
+/* Responsive */
+
+/* Pour les petits écrans */
+@media screen and (max-width: 600px) {
+  /* Styles à appliquer pour les petits écrans */
+}
+
+/* Pour les écrans de taille moyenne */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Styles à appliquer pour les écrans de taille moyenne */
+}
+
+/* Pour les grands écrans */
+@media screen and (min-width: 1025px) {
+  /* Styles à appliquer pour les grands écrans */
+}
